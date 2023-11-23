@@ -6,16 +6,9 @@
     "start": "node app.js"
   },
   "dependencies": {
-<<<<<<< HEAD
     "mysql": "^2.9.0",
     "mysql2": "^3.6.3",
     "restify": "^4.3.4",
     "sequelize": "^6.35.0"
-=======
-    "mysql": "2.9.0",
-    "restify": "^4.3.4",
-    "retify": "^0.0.1",
-    "sequelize": "3.14.2"
->>>>>>> de9df42e6031a521884bcfc650edbb6e46b99407
   }
 }

@@ -3,6 +3,9 @@ var Sequelize = require("sequelize");
 var Item = undefined;
 
 module.exports.connect = function(params, callback) {
+	console.log(params.dbname);
+        console.log(params.password);
+        console.log(params.username);	
     var sequlz = new Sequelize(
         params.dbname, params.username, params.password,
         params.params);
@@ -19,13 +22,13 @@ module.exports.connect = function(params, callback) {
         freezeTableName: true
     });
     // drop and create tables, better done globally
-    /*
-    Item.sync({ force: true }).then(function() {
+    /*Item.sync({ force: true }).then(function() {
         callback();
     }).error(function(err) {
         callback(err);
     });
-    */
+	
+*/
 }
 
 exports.disconnect = function(callback) {

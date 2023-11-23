@@ -6,13 +6,15 @@ var db = require('./models/db');
 var model = require('./models/items');
 
 model.connect(db.params, function(err) {
-    if (err) throw err;
+	console.log(err);
+    if (err) console.log(err);  throw err;
 });
 
 var server = restify.createServer() 
     .use(restify.fullResponse())
     .use(restify.queryParser())
     .use(restify.bodyParser());
+
     
 controller.context(server, '/todo/api', model); 
 

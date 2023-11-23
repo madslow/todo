@@ -4,8 +4,8 @@ module.exports.params = {
   username: process.env.MYSQL_ENV_MYSQL_USER,
   password: process.env.MYSQL_ENV_MYSQL_PASSWORD,
   params: {
-      host: process.env.MYSQL_ENV_MYSQL_HOST,
-      port: process.env.MYSQL_ENV_MYSQL_PORT,
+      host: MARIADB_SERVICE_SERVICE_HOST,
+      port: MARIADB_SERVICE_SERVICE_PORT,
       dialect: 'mysql'
   }
 };
